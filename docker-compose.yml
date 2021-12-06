@@ -1,0 +1,24 @@
+version: "3.6"
+services:
+  server:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    container_name: pawboss_grasschopper_server
+    volumes:
+      - .:/app
+      - ./dist:/usr/local/apache2/htdocs/
+    ports:
+      - 8088:80
+      - 8444:443
+    dns:
+    - 8.8.8.8
+    - 8.8.4.4
+  webpack:
+    build:
+      context: ./docker
+      dockerfile: WebpackDockerfile
+    container_name: pawboss_grasschopper_webpack
+    volumes:
+      - .:/app
+    command: ./docker/webpack_build.sh
