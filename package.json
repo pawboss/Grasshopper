@@ -1,6 +1,6 @@
 {
   "name": "grasschopper",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Webpack to compile all frontend assets",
   "main": "webpack.prod.js",
   "scripts": {
