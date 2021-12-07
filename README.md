@@ -1,23 +1,26 @@
 ```
 
-  ▄████  ██▀███   ▄▄▄        ██████   ██████  ▄████▄   ██░ ██  ▒█████   ██▓███   ██▓███  ▓█████  ██▀███  
- ██▒ ▀█▒▓██ ▒ ██▒▒████▄    ▒██    ▒ ▒██    ▒ ▒██▀ ▀█  ▓██░ ██▒▒██▒  ██▒▓██░  ██▒▓██░  ██▒▓█   ▀ ▓██ ▒ ██▒
-▒██░▄▄▄░▓██ ░▄█ ▒▒██  ▀█▄  ░ ▓██▄   ░ ▓██▄   ▒▓█    ▄ ▒██▀▀██░▒██░  ██▒▓██░ ██▓▒▓██░ ██▓▒▒███   ▓██ ░▄█ ▒
-░▓█  ██▓▒██▀▀█▄  ░██▄▄▄▄██   ▒   ██▒  ▒   ██▒▒▓▓▄ ▄██▒░▓█ ░██ ▒██   ██░▒██▄█▓▒ ▒▒██▄█▓▒ ▒▒▓█  ▄ ▒██▀▀█▄  
-░▒▓███▀▒░██▓ ▒██▒ ▓█   ▓██▒▒██████▒▒▒██████▒▒▒ ▓███▀ ░░▓█▒░██▓░ ████▓▒░▒██▒ ░  ░▒██▒ ░  ░░▒████▒░██▓ ▒██▒
- ░▒   ▒ ░ ▒▓ ░▒▓░ ▒▒   ▓▒█░▒ ▒▓▒ ▒ ░▒ ▒▓▒ ▒ ░░ ░▒ ▒  ░ ▒ ░░▒░▒░ ▒░▒░▒░ ▒▓▒░ ░  ░▒▓▒░ ░  ░░░ ▒░ ░░ ▒▓ ░▒▓░
-  ░   ░   ░▒ ░ ▒░  ▒   ▒▒ ░░ ░▒  ░ ░░ ░▒  ░ ░  ░  ▒    ▒ ░▒░ ░  ░ ▒ ▒░ ░▒ ░     ░▒ ░      ░ ░  ░  ░▒ ░ ▒░
-░ ░   ░   ░░   ░   ░   ▒   ░  ░  ░  ░  ░  ░  ░         ░  ░░ ░░ ░ ░ ▒  ░░       ░░          ░     ░░   ░ 
-      ░    ░           ░  ░      ░        ░  ░ ░       ░  ░  ░    ░ ░                       ░  ░   ░     
-                                             ░                                                           
-
+█▀▀▀ █▀▀█ █▀▀█ █▀▀ █▀▀ █▀▀ █░░█ █▀▀█ █▀▀█ █▀▀█ █▀▀ █▀▀█ 
+█░▀█ █▄▄▀ █▄▄█ ▀▀█ ▀▀█ █░░ █▀▀█ █░░█ █░░█ █░░█ █▀▀ █▄▄▀ 
+▀▀▀▀ ▀░▀▀ ▀░░▀ ▀▀▀ ▀▀▀ ▀▀▀ ▀░░▀ ▀▀▀▀ █▀▀▀ █▀▀▀ ▀▀▀ ▀░▀▀
 ```
-
 # GrassChopper
 
 ## About The Project
 
-This project has been built to facilitate frontend development tasks and the deployment of assets under webpack and docker
+What is grasschopper? It is an asset compilation tool to use in a development environment, fast and very versatile.
+
+Why use this and not npm? GrassChopper offers a webpack environment with dockerized npm, ready to use, with a web server under https, so that with a resource override plugin you can test your development in real time.
+
+Css, sass, less? all and none, grasschopper combines all stylesheets, use whatever you want.
+
+What do i need to start it? docker, nothing more.
+
+Grasschopper uses webpack and needs a JS entry point, but we don't need to make an entrypoint for each stylesheet, grasschopper will look for all the dependencies and compile them to get a css.
+
+Changes in real time: write styles and update the page, it's that simple.
+
+Start it up, navigate to the prepared css and use a resource override on whatever web you want.
 
 ### Installation
 
@@ -25,7 +28,7 @@ The project contains webpack within docker so the first time it is only necessar
 
 ```docker-compose up --build```
 
-Installation will take a few minutes while downloading docker images and installing node dependencies
+Installation will take a few minutes while downloading docker images and installing node dependencies and wake up the web server.
 
 ## Usage
 
