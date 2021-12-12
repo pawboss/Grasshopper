@@ -6,6 +6,8 @@
 ```
 # GrassChopper
 
+![](grasschopper.png)
+
 ## About The Project
 
 What is grasschopper? It is an asset compilation tool to use in a development environment, fast and very versatile.
